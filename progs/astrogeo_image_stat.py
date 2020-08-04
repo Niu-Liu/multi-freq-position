@@ -29,7 +29,7 @@ x_img_db_info["epoch"] = epoch.jyear
 x_img_db_info_g = x_img_db_info.group_by("iers_name")
 # sou_list = x_img_db_info_g.groups.keys
 
-# Outpuf file to store data
+# Output file to store data
 with open("../logs/astrogeo-image.info", "w") as fop:
 
     # Add header information
@@ -50,6 +50,11 @@ with open("../logs/astrogeo-image.info", "w") as fop:
             # flag = 3
 
         print("{},{:.0f}".format(group["iers_name"][0], flag), file=fop)
+
+# print X-band image
+with open("../logs/astrogeo-x-image.dat", "w") as fop:
+    for link in x_img_db_info["link"]:
+        print(link, file=fop)
 
 
 # --------------------------------- END --------------------------------

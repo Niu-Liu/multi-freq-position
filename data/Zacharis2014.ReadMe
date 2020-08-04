@@ -1,0 +1,185 @@
+I/325               Radio-optical reference frame link     (Zacharias+ 2013)
+================================================================================
+Radio-optical reference frame link using the USNO astrograph and deep CCD
+imaging (optical position results)
+    Zacharias M.I., Zacharias N.
+   <U.S. Naval Observatory, Washington DC (2013)>
+   =2013yCat.1325....0Z
+   =2014AJ....147...95Z
+================================================================================
+ADC_Keywords:  Fundamental catalog ; Positional data ; VLBI
+Keywords: astrometry ; reference systems ; QSO
+
+Abstract:
+    Between 1997 and 2004 several observing runs were conducted mainly
+    with the CTIO 0.9m to image ICRF counterparts (mostly QSOs) in order
+    to determine accurate optical positions. Contemporary to these deep
+    CCD images the same fields were observed with the USNO astrograph in
+    the same bandpass. These provide accurate positions on the
+    Hipparcos/Tycho-2 system for stars in the 10 to 16 magnitude range
+    used as reference stars for the deep CCD imaging data. Here we present
+    final optical position results of 413 sources based on astrograph data
+    reductions using UCAC2 and UCAC4 type reference stars. These optical
+    positions are compared to radio VLBI positions. The current optical
+    system is not perfectly aligned to the ICRF radio system with rigid
+    body rotation angles of 3 to 5 mas (3{sigma}) found between them for
+    all 3 axes. Furthermore, statistically, the optical-radio position
+    differences are found to exceed the total, combined, known errors in
+    the observations. Systematic errors in the optical reference stars as
+    well as physical offsets between the centers of optical and radio
+    emissions are both identified as likely causes. A detrimental,
+    astrophysical, random noise (DARN) component is postulated to be on
+    about the 10mas level. If confirmed by future observations, this could
+    severely limit the Gaia to ICRF reference frame alignment accuracy to
+    an error of about 0.5mas per coordinate axis with the current number
+    of sources envisioned to provide the link. A list of 36 ICRF sources
+    without the detection of an optical counterpart to a limiting
+    magnitude of about R=22 is provided as well.
+
+Description:
+    The following tables provide the observed, optical positions of 413
+    ICRF sources on the Hipparcos Catalogue Reference System (HCRS), as
+    well as position differences to the ICRF radio positions and auxiliary
+    data. Details of the project are described in the Astronomical Journal
+    paper with the same title.
+
+    Most targets were observed with the Cerro Tololo 0.9m telescope, some
+    with the Kitt Peak 2.1 m telescope. All targets are between about -86
+    and +32 degree declination spanning all 24 hours in RA. The link to
+    the primary optical coordinate system is provided by USNO astrograph
+    observations performed within weeks of the deep CCD imaging. Primary
+    reference stars are drawn from the Tycho-2 Catalogue, excluding stars
+    fainter than about V = 11. The astrograph data provides secondary
+    reference stars in the 10 to 16 mag range used to reduce the deep CCD
+    exposures. For both the deep and the astrograph data the same bandpass
+    (579 to 643 nm) was used with custom filters. Excluding outliers the
+    RMS radio-optical position differences are about 25 mas per coordinate.
+    Thus these data constitute the most precise of its kind so far.
+
+    The astrograph data were reduced with 2 different procedures,
+    following the pixel reduction schemes of the UCAC2 and UCAC4 type
+    reductions, respectively. The main differences are:
+
+  - UCAC2-type reductions utilize Gauss function image profile fits,
+    followed by empirical corrections of x,y data due to pixel phase
+    errors, while UCAC4-type reductions use modified Lorentz profiles for
+    stellar image fits, matching the observed PSF very well.
+
+  - UCAC2-type reductions use linear corrections as a function of
+    various parameters to mitigate systematic position errors caused by
+    the poor charge-transfer efficiency of the astrograph CCD, while
+    UCAC4-type reductions utilize bin-by-bin empirical corrections.
+
+    The UCAC2-type reductions show slightly smaller scatter in the optical
+    to radio position differences, while the UCAC4-type data lines up with
+    the radio coordinate system axes better.
+
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName  Lrecl   Records    Explanations
+--------------------------------------------------------------------------------
+ReadMe        80       .    This file
+icrf-u2.dat  193     666    Results from UCAC2-type reductions of ICRF
+                            optical counterparts (sample in table 4 of paper)
+icrf-u4.dat  193     682    Results from UCAC4-type reductions of ICRF
+                            optical counterparts (sample in table 5 of paper)
+--------------------------------------------------------------------------------
+
+See also:
+    I/289 : UCAC2 Catalogue (Zacharias+ 2004)
+    I/324 : UCAC4 Catalogue (Zacharias+ 2012)
+  VII/258 : Quasars and Active Galactic Nuclei (13th Ed.) (Veron+ 2010)
+    I/323 : International Celestial Reference Frame 2, ICRF2 (Ma+, 2009)
+ J/A+A/520/A113 : VLBI detection of 398 extragalactic radio sources (Bourda+, 2
+ J/A+A/526/A102 : VLBI imaging of 105 extragalactic radio sources (Bourda+, 201
+ J/A+A/553/A122 : Time stability of the ICRF2 axes (Lambert, 2013)
+ J/A+A/537/A99  : Large Quasar Astrometric Catalogue 2 (LQAC-2) (Souchay+ 2012)
+ http://www.obs.u-bordeaux1.fr/BVID/content.html : the Bordeaux VLBI Image
+                  Database
+
+Byte-by-byte Description of file: icrf-u2.dat icrf-u4.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  2  I2    h       RAh       Right Ascension ICRS (hours)
+   4-  5  I2    min     RAm       Right Ascension ICRS (minutes)
+   7- 13  F7.4  s       RAs       Right Ascension ICRS (seconds)
+      15  A1    ---     DE-       Declination ICRS (sign)
+  16- 17  I2    deg     DEd       Declination ICRS (degrees)
+  19- 20  I2    arcmin  DEm       Declination ICRS (minutes)
+  22- 27  F6.3  arcsec  DEs       Declination ICRS (seconds)
+  30- 40  F11.8 h       RAhour    Right Ascension ICRS (decimals hours)
+  43- 53  F11.7 deg     DEdeg     Declination ICRS (decimals degrees)
+  55- 60  F6.1  mas     Dist      [0/1821] Distance between the optical and
+                                           radio positions
+  62- 68  F7.1  mas     dRA*      Distance(optical-radio) in RA*cos(Dec)
+  70- 76  F7.1  mas     dDec      Distance(optical-radio) in Dec
+  78- 81  F4.0  mas     eRA       [4/250] total, formal error of optical
+                                          position (RA*cos(Dec))
+  83- 86  F4.0  mas     eDE       [4/250] total, formal error of optical
+                                          position (Dec)
+  88- 92  F5.1  ---     sRA       ratio dRA*/eRA (position difference in RA
+                                          in {sigma}s)
+  94- 98  F5.1  ---     sDE       ratio dDE/eDE (position difference in Dec
+                                          in {sigma}s)
+ 100-103  F4.1  mas     eRad      ?=99  error of radio position (per coordinate)
+ 106-107  I2    ---     Nccd      number of deep CCD exposures used
+ 109-112  I4    ---     Nr*       average number of reference stars per deep
+                                  exposure used
+ 114-116  I3    ---     Nrx       average number of reference stars excluded
+ 119-122  F4.1  ---     err       mean "plate" solution error of individual
+                                  deep CCD exposures
+ 125-128  I4    ---     S/N       [1/1639] Approximate signal/noise ratio of
+                                           target on individual deep CCD
+ 130-134  F5.2  mag     mag       ?=0.0 Optical brightness from LQAC-2
+                                        (J/A+A/537/A99)
+ 136-140  F5.3  ---     z         [0/5]? Redshift from LQAC-2 (J/A+A/537/A99)
+     142  I1    ---     T         [0/3] Object type: 0=unknown, 1=AGN, 2=BL-Lac,
+                                        3=QSO (from Veron's 13th ed. (VII/258)
+ 144-147  F4.2  ---     S         [0.8/7.2]?=9 Radio X-band (8-12GHz) structure
+                                  index from Bordeaux database: 1=very good,
+                                  2=good, 3=use with caution, 4=unacceptable
+     149  I1    ---     U         [2/4] UCAC-type reductions (2 or 4)
+ 151-158  A8    ---     Rname     B1950 coordinate based name of target
+     160  A1    ---     Run       [abo-zJ] Code of deep CCD observing run (1)
+     162  A1    ---   n_Run       [rc] Type of target: r=regular target,
+                                        c=also used as calibration field
+     164  A1    ---     Q         [ufplgn] Quality letter of optical image (2)
+ 167-193  A27   ---     Notes     Remarks; if a double the separation (pixel)
+                                  and flux ratio (source/companion) is given
+--------------------------------------------------------------------------------
+Note (1): the runs are assigned a 1-letter code, as follows:
+  o  = CTIO 0.9m   Dec 1997
+  p  = CTIO 0.9m   Feb 1998
+  q  = CTIO 0.9m   Jul 1998
+  r  = CTIO 0.9m   Aug 1998
+  s  = CTIO 0.9m   Jan 1999
+  t  = CTIO 0.9m   Mar 1999
+  u  = CTIO 0.9m   Jun 1999
+  v  = CTIO 0.9m   Sep 1999
+  w  = CTIO 0.9m   Dec 1999
+  x  = CTIO 0.9m   Mar 2000
+  y  = CTIO 0.9m   Jun 2000
+  z  = CTIO 0.9m   Sep 2000
+  a  = CTIO 0.9m   Jan 2001
+  b  = KPNO 2.1m   Jun 2001
+  J  = CTIO 0.9m   May 2004
+Note (2): the quality is coded as follows:
+  u = unconfirmed, too faint for unique ID
+  f = faint optical source (S/N <= 5)
+  p = problem case, (>= 5{sigma} position difference) or blended image
+  l = large (opt.-radio) position difference (>= 3{sigma})
+  g = good optical source
+  n = no ICRF2 radio position, instead following was used:
+      for 0447-439: Perlman et al. 1998AJ....115.1253P;
+      for 2316-423: Roopesh 2009, private communication
+--------------------------------------------------------------------------------
+
+History:
+  * 12-Nov-2013: the files were supplied by Norbert Zacharias
+    (files were named "fintab.all2" and "fintab.all4")
+  * 10-Dec-2013: comment the meaning of the 'n' quality letter.
+
+================================================================================
+(End)         Norbert Zacharias [USNO], Francois Ochsenbein [CDS]    12-Nov-2013
