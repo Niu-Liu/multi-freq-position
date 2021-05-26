@@ -12,5 +12,5 @@ cd ${dest_dir}
 
 for link in `cat ../../logs/astrogeo-x-image.dat`
 do
-    wget ${link}
+    wget -nc ${link}
 done
