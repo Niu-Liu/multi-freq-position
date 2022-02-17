@@ -1,15 +1,16 @@
-# Comparison of multifrequency positions of extragalactic sources
+# Comparison of multifrequency positions of extragalactic sources from global geodetic VLBI monitoring program and Gaia EDR3
+---
 
+
+ 
 This reposity presents results in my recent paper in the format of Jupyter
 Notebook, whose information is given below.
 
 
-Title: Comparison of multifrequency positions of extragalactic sources from
- global geodetic VLBI monitoring program and Gaia EDR3
-Authors: Niu Liu, Sebastien Lambert, Patrick Charlot, Zi Zhu, Jia-Cheng Liu,
+**Authors**: Niu Liu, Sebastien Lambert, Patrick Charlot, Zi Zhu, Jia-Cheng Liu,
  Nan Jiang, Xiao-Sheng Wan, Cheng-Yu Ding
- 
-DOI: [10.1051/0004-6361/202038179](https://doi.org/10.1051/0004-6361/202038179)
+
+***Source***: [DOI: 10.1051/0004-6361/202038179](https://doi.org/10.1051/0004-6361/202038179).
 
 **Abstract**
 
